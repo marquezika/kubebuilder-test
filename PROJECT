@@ -1,0 +1,16 @@
+domain: mydomain.org
+layout:
+- go.kubebuilder.io/v3
+projectName: kubebuilder-tests
+repo: kubebuilder-tests
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: mydomain.org
+  group: cnat
+  kind: At
+  path: kubebuilder-tests/api/v1alpha1
+  version: v1alpha1
+version: "3"
